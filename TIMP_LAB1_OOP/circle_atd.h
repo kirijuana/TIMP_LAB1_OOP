@@ -1,5 +1,5 @@
-#ifndef __triangle_atd__
-#define __triangle_atd__
+#ifndef __circle_atd__
+#define __circle_atd__
 // Требуется описание класса shape
 #include "shape_atd.h"
 namespace simple_shapes {
