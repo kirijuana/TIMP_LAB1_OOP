@@ -14,6 +14,7 @@ namespace simple_shapes {
 		// вывод фигур и периметра
 		void Perimeter(ofstream &ofst);
 		void Clear();
+		void Sort(); // сортировка контейнера
 		container();
 		~container() { Clear(); }
 	};
