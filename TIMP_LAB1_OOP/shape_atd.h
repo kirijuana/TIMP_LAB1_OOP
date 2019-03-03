@@ -9,10 +9,10 @@ namespace simple_shapes {
 	// проверку интерфейса
 	class shape {
 	public:
-		// иденитфикация, порождение и ввод фигуры из потока
 		static shape* In(ifstream &ifst);
-		virtual void InData(ifstream &ifst) = 0; // ввод
-		virtual void Out(ofstream &ofst) = 0; // вывод
+		virtual int Perimeter() = 0; // вычисление периметра
+		virtual void InData(ifstream &ifst) = 0;
+		virtual void Out(ofstream &ofst) = 0;
 	};
 } // end simple_shapes namespace
 #endif
