@@ -8,11 +8,21 @@ namespace simple_shapes {
 	// Является абстрактным, обеспечивая, тем самым,
 	// проверку интерфейса
 	class shape {
+		int angle;
 	public:
-		// иденитфикация, порождение и ввод фигуры из потока
 		static shape* In(ifstream &ifst);
-		virtual void InData(ifstream &ifst) = 0; // ввод
-		virtual void Out(ofstream &ofst) = 0; // вывод
+		void shape::InData(ifstream &ifst) {
+			ifst >> angle;
+		}
+		//----------------------------------------------------
+		// Вывод параметров фигуры
+		void shape::Out(ofstream &ofst) {
+			ofst << "angle = " << angle;
+		}
+	protected:
+		shape() {};
 	};
+
+
 } // end simple_shapes namespace
 #endif
