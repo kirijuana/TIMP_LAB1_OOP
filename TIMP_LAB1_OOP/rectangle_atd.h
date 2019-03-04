@@ -4,14 +4,16 @@
 #include "shape_atd.h"
 namespace simple_shapes {
 	// прямоугольник
-	class rectangle : public shape {
-		int x, y; // координаты
+	class rectangle : public shape
+	{
+		int x, y; // ширина, высота
 		char colour[10];
 	public:
-		// переопределяем интерфейс класса
-		void InData(ifstream &ifst); // ввод
-		void Out(ofstream &ofst); // вывод
-		rectangle() {} // создание без инициализации.
-	};
+		void InData(ifstream &ifst);
+		void Out(ofstream &ofst);
+		// вывод только прямоугольников
+		void OutRect(ofstream &ofst);
+		rectangle() {}
+	};
 } // end simple_shapes namespace
 #endif
