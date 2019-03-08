@@ -4,6 +4,7 @@
 // геометрических фигурах
 #include "rectangle_atd.h"
 #include "circle_atd.h"
+#include "triangle_atd_.h"
 using namespace std;
 namespace simple_shapes {
 	// Ввод параметров обобщенной фигуры
@@ -17,6 +18,9 @@ namespace simple_shapes {
 			break;
 		case 2:
 			sp = new circle;
+			break;
+		case 3:
+			sp = new triangle;
 			break;
 		default:
 			return 0;
