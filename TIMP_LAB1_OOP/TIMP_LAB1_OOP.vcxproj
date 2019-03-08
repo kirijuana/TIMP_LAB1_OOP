@@ -155,11 +155,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="circle_In.cpp" />
+    <ClCompile Include="circle_Perimetre.cpp" />
     <ClCompile Include="container_Constr.cpp" />
     <ClCompile Include="container_In.cpp" />
     <ClCompile Include="container_Out.cpp" />
+    <ClCompile Include="container_Perimetre.cpp" />
     <ClCompile Include="rectangle_In.cpp" />
     <ClCompile Include="rectangle_Out.cpp" />
+    <ClCompile Include="rectangle_Perimetre.cpp" />
     <ClCompile Include="shape_In.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -171,6 +174,7 @@
     <ClCompile Include="circle_Out.cpp" />
     <ClCompile Include="triangle_In.cpp" />
     <ClCompile Include="triangle_Out.cpp" />
+    <ClCompile Include="triangle_Perimeter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

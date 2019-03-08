@@ -1,17 +1,18 @@
-#ifndef __circle_atd__
+п»ї#ifndef __circle_atd__
 #define __circle_atd__
-// Требуется описание класса shape
+// РўСЂРµР±СѓРµС‚СЃСЏ РѕРїРёСЃР°РЅРёРµ РєР»Р°СЃСЃР° shape
 #include "shape_atd.h"
 namespace simple_shapes {
-	// треугольник
+	// С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 	class circle : public shape {
-		int x, R; // радиус и координата центра круга
+		int x, R; // СЂР°РґРёСѓСЃ Рё РєРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° РєСЂСѓРіР°
 		char colour[10];
 	public:
-		// переопределяем интерфейс класса
-		void InData(ifstream &ifst); // ввод
-		void Out(ofstream &ofst); // вывод
-		circle() {} // создание без инициализации.
+		// РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµРј РёРЅС‚РµСЂС„РµР№СЃ РєР»Р°СЃСЃР°
+		void InData(ifstream &ifst); // РІРІРѕРґ
+		void Out(ofstream &ofst); // РІС‹РІРѕРґ
+		int Perimeter(); // ГўГ»Г·ГЁГ±Г«ГҐГ­ГЁГҐ ГЇГҐГ°ГЁГ¬ГҐГІГ°Г 
+		circle() {} // СЃРѕР·РґР°РЅРёРµ Р±РµР· РёРЅРёС†РёР°Р»РёР·Р°С†РёРё.
 	};
 } // end simple_shapes namespace
 #endif

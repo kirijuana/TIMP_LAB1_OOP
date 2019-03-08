@@ -11,6 +11,7 @@ namespace simple_shapes {
 		// ïåðåîïðåäåëÿåì èíòåðôåéñ êëàññà
 		void InData(ifstream &ifst); // ââîä
 		void Out(ofstream &ofst); // âûâîä
+		int Perimeter(); // âû÷èñëåíèå ïåðèìåòðà
 		triangle() {} // ñîçäàíèå áåç èíèöèàëèçàöèè.
 	};
 } // end simple_shapes namespace

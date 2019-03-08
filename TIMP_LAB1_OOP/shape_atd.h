@@ -1,18 +1,19 @@
-#pragma once
+п»ї#pragma once
 #ifndef __shape_atd__
 #define __shape_atd__
 #include <fstream>
 using namespace std;
 namespace simple_shapes {
-	// Класс, обобщающает все имеющиеся фигуры.
-	// Является абстрактным, обеспечивая, тем самым,
-	// проверку интерфейса
+	// РљР»Р°СЃСЃ, РѕР±РѕР±С‰Р°СЋС‰Р°РµС‚ РІСЃРµ РёРјРµСЋС‰РёРµСЃСЏ С„РёРіСѓСЂС‹.
+	// РЇРІР»СЏРµС‚СЃСЏ Р°Р±СЃС‚СЂР°РєС‚РЅС‹Рј, РѕР±РµСЃРїРµС‡РёРІР°СЏ, С‚РµРј СЃР°РјС‹Рј,
+	// РїСЂРѕРІРµСЂРєСѓ РёРЅС‚РµСЂС„РµР№СЃР°
 	class shape {
 	public:
-		// иденитфикация, порождение и ввод фигуры из потока
+		// РёРґРµРЅРёС‚С„РёРєР°С†РёСЏ, РїРѕСЂРѕР¶РґРµРЅРёРµ Рё РІРІРѕРґ С„РёРіСѓСЂС‹ РёР· РїРѕС‚РѕРєР°
 		static shape* In(ifstream &ifst);
-		virtual void InData(ifstream &ifst) = 0; // ввод
-		virtual void Out(ofstream &ofst) = 0; // вывод
+		virtual int Perimeter() = 0; // ГўГ»Г·ГЁГ±Г«ГҐГ­ГЁГҐ ГЇГҐГ°ГЁГ¬ГҐГІГ°Г 
+		virtual void InData(ifstream &ifst) = 0; // РІРІРѕРґ
+		virtual void Out(ofstream &ofst) = 0; // РІС‹РІРѕРґ
 	};
 } // end simple_shapes namespace
 #endif

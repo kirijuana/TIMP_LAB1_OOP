@@ -1,17 +1,18 @@
-#ifndef __rectangle_atd__
+п»ї#ifndef __rectangle_atd__
 #define __rectangle_atd__
-// Требеутся описание класса shape
+// РўСЂРµР±РµСѓС‚СЃСЏ РѕРїРёСЃР°РЅРёРµ РєР»Р°СЃСЃР° shape
 #include "shape_atd.h"
 namespace simple_shapes {
-	// прямоугольник
+	// РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє
 	class rectangle : public shape {
-		int x, y; // координаты
+		int x, y; // РєРѕРѕСЂРґРёРЅР°С‚С‹
 		char colour[10];
 	public:
-		// переопределяем интерфейс класса
-		void InData(ifstream &ifst); // ввод
-		void Out(ofstream &ofst); // вывод
-		rectangle() {} // создание без инициализации.
+		// РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµРј РёРЅС‚РµСЂС„РµР№СЃ РєР»Р°СЃСЃР°
+		void InData(ifstream &ifst); // РІРІРѕРґ
+		void Out(ofstream &ofst); // РІС‹РІРѕРґ
+		int Perimeter(); // ГўГ»Г·ГЁГ±Г«ГҐГ­ГЁГҐ ГЇГҐГ°ГЁГ¬ГҐГІГ°Г 
+		rectangle() {} // СЃРѕР·РґР°РЅРёРµ Р±РµР· РёРЅРёС†РёР°Р»РёР·Р°С†РёРё.
 	};
 } // end simple_shapes namespace
 #endif
