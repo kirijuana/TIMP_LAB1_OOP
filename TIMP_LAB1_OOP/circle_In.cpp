@@ -5,5 +5,6 @@ namespace simple_shapes {
 	// ¬вод параметров треугольника
 	void circle::InData(ifstream &ifst) {
 		ifst >> x >> R >> colour;
+		shape::InData(ifst);
 	}
 } // end simple_shapes namespace

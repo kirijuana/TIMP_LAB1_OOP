@@ -4,7 +4,9 @@ using namespace std;
 namespace simple_shapes {
 	// Вывод параметров круга
 		void circle::Out(ofstream &ofst) {
-		ofst << "It is Triangle: x = "
-			<< x << ", R = " << R << ", Colour = " << colour << endl;
+			ofst << "It is Triangle: x = "
+				<< x << ", R = " << R << ", Colour = " << colour;
+			shape::Out(ofst);
+			ofst << endl;
 	}
 } // end simple_shapes namespace
