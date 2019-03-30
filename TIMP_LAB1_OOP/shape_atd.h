@@ -25,4 +25,4 @@ namespace simple_shapes {
 		shape() {};
 	};
 } // end simple_shapes namespace
-#endif
+#endif
