@@ -22,4 +22,4 @@ namespace simple_shapes {
 		} // утилизация контейнера
 	};
 } // end simple_shapes namespace
-#endif
+#endif
