@@ -5,9 +5,21 @@ using namespace std;
 namespace simple_shapes {
 	// Âûâîä ïàðàìåòðîâ ïðÿìîóãîëüíèêà
 	int rectangle::Perimeter() {
-		if (x <= 0 || y <= 0)
+		if (x < 0)
 		{
-			cout << "Incorrect rectangle value";
+			cout << "Incorrect rectangle value - x < 0";
+		}
+		if (x == 0)
+		{
+			cout << "Incorrect rectangle value - x = 0";
+		}
+		if (y == 0)
+		{
+			cout << "Incorrect rectangle value - y = 0";
+		}
+		if (y < 0)
+		{
+			cout << "Incorrect rectangle value - y < 0";
 		}
 		return x + y;
 	}
