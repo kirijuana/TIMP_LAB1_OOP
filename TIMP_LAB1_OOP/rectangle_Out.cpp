@@ -4,7 +4,9 @@ using namespace std;
 namespace simple_shapes {
 	// Вывод параметров прямоугольника
 	void rectangle::Out(ofstream &ofst) {
-			ofst << "It is Rectangle: x = " << x
-			<< ", y = " << y << ", Colour = " << colour << endl;
+		ofst << "It is Rectangle: x = " << x << ", y = "
+			<< y << ", ";
+		shape::Out(ofst);
+		ofst << endl;
 	}
 } // end simple_shapes namespace
