@@ -20,6 +20,7 @@ namespace simple_shapes {
 		void shape::Out(ofstream &ofst) {
 			ofst << "angle = " << angle;
 		}		virtual void OutRect(ofstream &ofst);
+		bool Compare(shape &other);
 	protected:
 		shape() {};
 	};
