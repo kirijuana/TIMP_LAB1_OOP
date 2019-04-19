@@ -16,7 +16,11 @@ namespace simple_shapes {
 		void Clear();
 		void Sort(); // сортировка контейнера
 		container();
-		~container() { Clear(); }
+		
+		~container() 
+		{ 
+			Clear(); 
+		}
 	};
 	//--------------
 } // end simple_shapes namespace
