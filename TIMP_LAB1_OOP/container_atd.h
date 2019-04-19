@@ -16,6 +16,11 @@ namespace simple_shapes {
 		void Clear();
 		void Sort(); // сортировка контейнера
 		container();
+		void In(ifstream &ifst); // ввод
+		void Out(ofstream &ofst); // вывод
+		void Clear(); // очистка контейнера от фигур
+		void OutRect(ofstream &ofst);
+		container(); // инициализация контейнера
 		
 		~container() 
 		{ 
