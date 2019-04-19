@@ -11,6 +11,9 @@ namespace simple_shapes {
 		int angle;
 	public:
 		static shape* In(ifstream &ifst);
+		virtual int Perimeter() = 0; // вычисление периметра
+		virtual void InData(ifstream &ifst) = 0;
+		virtual void Out(ofstream &ofst) = 0;
 		void shape::InData(ifstream &ifst) {
 			ifst >> angle;
 		}

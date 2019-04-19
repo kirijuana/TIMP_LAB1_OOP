@@ -8,10 +8,10 @@ namespace simple_shapes {
 		int x, y; // координаты
 		char colour[10];
 	public:
-		// переопределяем интерфейс класса
-		void InData(ifstream &ifst); // ввод
-		void Out(ofstream &ofst); // вывод
-		rectangle() {} // создание без инициализации.
+		void InData(ifstream &ifst);
+		void Out(ofstream &ofst);
+		int Perimeter(); // вычисление периметра
+		rectangle() {}
 	};
 } // end simple_shapes namespace
 #endif

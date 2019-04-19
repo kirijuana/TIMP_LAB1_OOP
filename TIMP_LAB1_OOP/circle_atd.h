@@ -8,10 +8,10 @@ namespace simple_shapes {
 		int x, R; // радиус и координата центра круга
 		char colour[10];
 	public:
-		// переопределяем интерфейс класса
-		void InData(ifstream &ifst); // ввод
-		void Out(ofstream &ofst); // вывод
-		circle() {} // создание без инициализации.
-	};
+		void InData(ifstream &ifst);
+		void Out(ofstream &ofst);
+		int Perimeter(); // вычисление периметра
+		circle() {}
+	};
 } // end simple_shapes namespace
 #endif
