@@ -179,6 +179,7 @@
     <ClCompile Include="circle_Out.cpp" />
     <ClCompile Include="triangle_In.cpp" />
     <ClCompile Include="triangle_Out.cpp" />
+    <ClCompile Include="triangle_Perimetre.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

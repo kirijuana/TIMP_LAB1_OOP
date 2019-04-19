@@ -7,13 +7,13 @@ using namespace std;
 using namespace simple_shapes;
 int main(int argc, char* argv[])
 {
-	//if (argc != 3)
-	//{
-	//	cout << "incorrect command line! "
-	//		"Waited: command in_file out_file"
-	//		<< endl;
-	//	exit(1);
-	//}
+	if (argc != 3)
+	{
+		cout << "incorrect command line! "
+			"Waited: command in_file out_file"
+			<< endl;
+		exit(1);
+	}
 	argv[1] = "in.txt";
 	argv[2] = "out.txt";
 
