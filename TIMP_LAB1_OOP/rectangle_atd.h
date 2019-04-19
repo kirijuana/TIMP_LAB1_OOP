@@ -13,11 +13,7 @@ namespace simple_shapes {
 		void Out(ofstream &ofst);
 		// вывод только прямоугольников
 		void OutRect(ofstream &ofst);
-		rectangle() {}
-	};
-		void InData(ifstream &ifst);
-		void Out(ofstream &ofst);
-		int Perimeter(); // вычисление периметра
+		int Perimeter();
 		rectangle() {}
 	};
 } // end simple_shapes namespace

@@ -21,12 +21,9 @@ namespace simple_shapes {
 		// Вывод параметров фигуры
 		void shape::Out(ofstream &ofst) {
 			ofst << "angle = " << angle;
-		}
+		}		virtual void OutRect(ofstream &ofst);
 	protected:
 		shape() {};
-		virtual void InData(ifstream &ifst) = 0; // ввод
-		virtual void Out(ofstream &ofst) = 0; // вывод
-		virtual void OutRect(ofstream &ofst);
 	};
 
 

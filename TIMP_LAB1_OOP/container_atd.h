@@ -9,19 +9,14 @@ namespace simple_shapes {
 		int len; // текущая длина
 		shape *cont[max_len];
 	public:
-		void In(ifstream &ifst);
-		void Out(ofstream &ofst);
-		// вывод фигур и периметра
-		void Perimeter(ofstream &ofst);
-		void Clear();
-		void Sort(); // сортировка контейнера
-		container();
 		void In(ifstream &ifst); // ввод
 		void Out(ofstream &ofst); // вывод
+		// вывод фигур и периметра
+		void Perimeter(ofstream &ofst);
 		void Clear(); // очистка контейнера от фигур
-		void OutRect(ofstream &ofst);
+		void Sort(); // сортировка контейнера
 		container(); // инициализация контейнера
-		
+
 		~container() 
 		{ 
 			Clear(); 
