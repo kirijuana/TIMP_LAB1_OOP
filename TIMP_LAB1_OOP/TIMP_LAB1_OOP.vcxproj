@@ -160,10 +160,12 @@
     <ClCompile Include="container_In.cpp" />
     <ClCompile Include="container_Out.cpp" />
     <ClCompile Include="container_Perimetre.cpp" />
+    <ClCompile Include="container_Sort.cpp" />
     <ClCompile Include="rectangle_In.cpp" />
     <ClCompile Include="rectangle_Out.cpp" />
     <ClCompile Include="rectangle_Perimetre.cpp" />
     <ClCompile Include="shape_In.cpp" />
+    <ClCompile Include="shape_Sort.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
