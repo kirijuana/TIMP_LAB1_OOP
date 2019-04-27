@@ -16,5 +16,6 @@ namespace simple_shapes {
 		int Perimeter();
 		rectangle() {}
 	};
+
 } // end simple_shapes namespace
 #endif
