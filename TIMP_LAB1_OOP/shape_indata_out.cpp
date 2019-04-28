@@ -2,7 +2,6 @@
 #include "shape_atd.h"
 // Необходима подключить информацию обо всех имеющихся
 // геометрических фигурах
-
 using namespace std;
 namespace simple_shapes {
 	// Ввод параметров обобщенной фигуры
