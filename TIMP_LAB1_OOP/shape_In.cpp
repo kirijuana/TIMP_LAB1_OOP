@@ -8,6 +8,7 @@
 using namespace std;
 namespace simple_shapes {
 	// ¬вод параметров обобщенной фигуры
+
 	shape* shape::In(ifstream &ifst) {
 		shape *sp;
 		int k;
@@ -28,4 +29,6 @@ namespace simple_shapes {
 		sp->InData(ifst);
 		return sp;
 	}
+	
+
 } // end simple_shapes namespace

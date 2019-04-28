@@ -167,6 +167,7 @@
     <ClCompile Include="rectangle_OutRect.cpp" />
     <ClCompile Include="rectangle_Perimetre.cpp" />
     <ClCompile Include="shape_In.cpp" />
+    <ClCompile Include="shape_indata_out.cpp" />
     <ClCompile Include="shape_OutRect.cpp" />
     <ClCompile Include="shape_Sort.cpp" />
     <ClCompile Include="stdafx.cpp">
