@@ -12,8 +12,7 @@ namespace simple_shapes {
 	public:
 		static shape* In(ifstream &ifst);
 		virtual int Perimeter() = 0; // вычисление периметра		virtual void InData(ifstream &ifst);
-		virtual void Out(ofstream &ofst);
-		
+		virtual void Out(ofstream &ofst);		
 		virtual void OutRect(ofstream &ofst);
 		bool Compare(shape &other);
 	protected:	
