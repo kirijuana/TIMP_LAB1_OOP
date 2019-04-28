@@ -9,6 +9,8 @@ namespace simple_shapes {
 		for (int i = 0; i < len; i++) {
 			ofst << i << ": ";
 			cont[i]->Out(ofst);
+			ofst << "perimeter = "
+				<< cont[i]->Perimeter() << endl;
 		}
 	}
 } // end simple_shapes namespace

@@ -29,6 +29,9 @@ int main(int argc, char* argv[])
 	c.In(ifst);
 	ofst << "Filled container. " << endl;
 	c.Out(ofst);
+	c.Sort();
+	c.Out(ofst);
+	c.OutRect(ofst);
 	c.Clear();
 	ofst << "Empty container. " << endl;
 	c.Out(ofst);
