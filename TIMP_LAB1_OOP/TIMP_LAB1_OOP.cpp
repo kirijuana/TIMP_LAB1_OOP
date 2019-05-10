@@ -15,23 +15,32 @@ int main(int argc, char* argv[])
 		exit(1);
 	}
 	ifstream ifst(argv[1]);
-	if (!ifst)
-	{
+	ofstream ofst(argv[2]);
+	if (!(ifst.is_open())) {
+		cout << "File not find\n";
+		cout << "exit";
+		cin.get();
 		return -1;
 	}
-	ofstream ofst(argv[2]);
-	if (!ofst)
-	{
+	else {
+		cout << "Input file open\n";
+	}
+
+
+	if (!(ofst.is_open())) {
+		cout << "File not find\n";
+		cout << "exit";
+		cin.get();
 		return -1;
+	}
+	else {
+		cout << "Output file open\n";
 	}
 	cout << "Start" << endl;
 	container c;
 	c.In(ifst);
 	ofst << "Filled container. " << endl;
 	c.Out(ofst);
-	c.Sort();
-	c.Out(ofst);
-	c.OutRect(ofst);
 	c.Clear();
 	ofst << "Empty container. " << endl;
 	c.Out(ofst);

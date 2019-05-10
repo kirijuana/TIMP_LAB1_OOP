@@ -5,6 +5,7 @@
 #include "rectangle_atd.h"
 #include "circle_atd.h"
 #include "triangle_atd.h"
+#include <iostream>
 using namespace std;
 namespace simple_shapes {
 	// ¬вод параметров обобщенной фигуры
@@ -13,6 +14,15 @@ namespace simple_shapes {
 		shape *sp;
 		int k;
 		ifst >> k;
+		if (ifst.fail())
+		{
+			cout << "Wrong input shape!" << endl;
+		}
+		if (k != 1 && k != 2 && k != 3)
+		{
+			cout << "Incorrect value Key!" << endl;
+			exit(1);
+		}
 		switch (k) {
 		case 1:
 			sp = new rectangle;

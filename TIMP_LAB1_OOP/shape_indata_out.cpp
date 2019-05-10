@@ -7,10 +7,10 @@ namespace simple_shapes {
 	// ¬вод параметров обобщенной фигуры
 
 	void shape::InData(ifstream &ifst) {
-		ifst >> angle;
+		ifst >> density;
 	}
 
 	void shape::Out(ofstream &ofst) {
-		ofst << "angle = " << angle;
+		ofst << "angle = " << density;
 	}
 }

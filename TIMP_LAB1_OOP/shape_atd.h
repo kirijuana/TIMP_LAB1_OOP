@@ -8,7 +8,7 @@ namespace simple_shapes {
 	// явл€етс€ абстрактным, обеспечива€, тем самым,
 	// проверку интерфейса
 	class shape {
-		int angle;
+		float density;
 	public:
 		static shape* In(ifstream &ifst);
 		virtual void InData(ifstream &ifst);
