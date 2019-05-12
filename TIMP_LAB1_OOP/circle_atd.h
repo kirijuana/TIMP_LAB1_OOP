@@ -5,7 +5,7 @@
 namespace simple_shapes {
 	// треугольник
 	class circle : public shape {
-		int x, R; // радиус и координата центра круга
+		int x, y, R; // радиус и координата центра круга
 		char colour[10];
 	public:
 		// переопределяем интерфейс класса
