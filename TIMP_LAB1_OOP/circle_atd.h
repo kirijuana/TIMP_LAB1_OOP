@@ -11,6 +11,10 @@ namespace simple_shapes {
 		// переопределяем интерфейс класса
 		void InData(ifstream &ifst); // ввод
 		void Out(ofstream &ofst); // вывод
+		// мультиметод
+		void MultiMethod(shape *other, ofstream &ofst);
+		void MMRect(ofstream &ofst);
+		void MMCircle(ofstream &ofst);
 		circle() {} // создание без инициализации.
 	};
 } // end simple_shapes namespace

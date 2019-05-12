@@ -155,10 +155,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="circle_In.cpp" />
+    <ClCompile Include="circle_MM.cpp" />
+    <ClCompile Include="circle_MMCircle.cpp" />
+    <ClCompile Include="circle_MMRect.cpp" />
     <ClCompile Include="container_Constr.cpp" />
     <ClCompile Include="container_In.cpp" />
+    <ClCompile Include="container_MM.cpp" />
     <ClCompile Include="container_Out.cpp" />
     <ClCompile Include="rectangle_In.cpp" />
+    <ClCompile Include="rectangle_MM.cpp" />
+    <ClCompile Include="rectangle_MMCircle.cpp" />
+    <ClCompile Include="rectangle_MMRect.cpp" />
     <ClCompile Include="rectangle_Out.cpp" />
     <ClCompile Include="shape_In.cpp" />
     <ClCompile Include="stdafx.cpp">
