@@ -158,6 +158,7 @@
     <ClCompile Include="circle_MM.cpp" />
     <ClCompile Include="circle_MMCircle.cpp" />
     <ClCompile Include="circle_MMRect.cpp" />
+    <ClCompile Include="circle_MMTriangle.cpp" />
     <ClCompile Include="container_Constr.cpp" />
     <ClCompile Include="container_In.cpp" />
     <ClCompile Include="container_MM.cpp" />
@@ -166,6 +167,7 @@
     <ClCompile Include="rectangle_MM.cpp" />
     <ClCompile Include="rectangle_MMCircle.cpp" />
     <ClCompile Include="rectangle_MMRect.cpp" />
+    <ClCompile Include="rectangle_MMTriangle.cpp" />
     <ClCompile Include="rectangle_Out.cpp" />
     <ClCompile Include="shape_In.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -177,7 +179,11 @@
     <ClCompile Include="TIMP_LAB1_OOP.cpp" />
     <ClCompile Include="circle_Out.cpp" />
     <ClCompile Include="triangle_In.cpp" />
+    <ClCompile Include="triangle_MM.cpp" />
+    <ClCompile Include="triangle__MMCircle.cpp" />
+    <ClCompile Include="triangle_MMTriangle.cpp" />
     <ClCompile Include="triangle_Out.cpp" />
+    <ClCompile Include="triangle_MMRectangle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

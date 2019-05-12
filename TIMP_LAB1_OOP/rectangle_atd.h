@@ -15,7 +15,7 @@ namespace simple_shapes {
 		void MultiMethod(shape *other, ofstream &ofst);
 		void MMRect(ofstream &ofst);
 		void MMCircle(ofstream &ofst);
-	
+		void MMTriangle(ofstream &ofst);
 		rectangle() {} // создание без инициализации.
 	};
 } // end simple_shapes namespace

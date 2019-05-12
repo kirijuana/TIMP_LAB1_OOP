@@ -17,6 +17,7 @@ namespace simple_shapes {
 		virtual void MultiMethod(shape *other, ofstream &ofst) = 0;
 		virtual void MMRect(ofstream &ofst) = 0;
 		virtual void MMCircle(ofstream &ofst) = 0;
+		virtual void MMTriangle(ofstream &ofst) = 0;
 	};
 } // end simple_shapes namespace
 #endif
