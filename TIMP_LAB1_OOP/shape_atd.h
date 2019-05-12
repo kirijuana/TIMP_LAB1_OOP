@@ -13,6 +13,10 @@ namespace simple_shapes {
 		static shape* In(ifstream &ifst);
 		virtual void InData(ifstream &ifst) = 0; // ввод
 		virtual void Out(ofstream &ofst) = 0; // вывод
+		// мультиметод
+		virtual void MultiMethod(shape *other, ofstream &ofst) = 0;
+		virtual void MMRect(ofstream &ofst) = 0;
+		virtual void MMCircle(ofstream &ofst) = 0;
 	};
 } // end simple_shapes namespace
 #endif

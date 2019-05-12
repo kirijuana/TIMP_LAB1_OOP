@@ -5,6 +5,6 @@ namespace simple_shapes {
 	// Вывод параметров круга
 		void circle::Out(ofstream &ofst) {
 		ofst << "It is Triangle: x = "
-			<< x << ", R = " << R << ", Colour = " << colour << endl;
+			<< x << ", y = " << y << ", R = " << R << ", Colour = " << colour << endl;
 	}
 } // end simple_shapes namespace
