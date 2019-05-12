@@ -1,9 +1,11 @@
 #include "stdafx.h"
 #include "container_atd.h"
+
 using namespace std;
+
 namespace simple_shapes {
 	// Вывод содержимого контейнера
-	void container::Out(ofstream &ofst) {
+	void Container::Out(ofstream &ofst) {
 		ofst << "Container contents " << len
 			<< " elements." << endl;
 		for (int i = 0; i < len; i++) {

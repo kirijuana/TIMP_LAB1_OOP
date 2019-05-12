@@ -1,17 +1,16 @@
 #ifndef __circle_atd__
 #define __circle_atd__
-// Требуется описание класса shape
 #include "shape_atd.h"
+
 namespace simple_shapes {
-	// треугольник
-	class circle : public shape {
-		int x, R; // радиус и координата центра круга
+	class Circle : public Shape {
+		int x, y, R; // радиус и координаты центра круга
 		char colour[10];
 	public:
 		void InData(ifstream &ifst);
 		void Out(ofstream &ofst);
 		int Perimeter(); // вычисление периметра
-		circle() {}
-	};
+		Circle() {}
+	};
 } // end simple_shapes namespace
 #endif

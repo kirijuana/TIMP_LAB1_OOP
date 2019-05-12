@@ -1,10 +1,9 @@
 #ifndef __rectangle_atd__
 #define __rectangle_atd__
-// Требеутся описание класса shape
 #include "shape_atd.h"
+
 namespace simple_shapes {
-	// прямоугольник
-	class rectangle : public shape
+	class Rectangle : public Shape
 	{
 		int x, y; // ширина, высота
 		char colour[10];
@@ -14,8 +13,7 @@ namespace simple_shapes {
 		// вывод только прямоугольников
 		void OutRect(ofstream &ofst);
 		int Perimeter();
-		rectangle() {}
+		Rectangle() {}
 	};
-
 } // end simple_shapes namespace
 #endif

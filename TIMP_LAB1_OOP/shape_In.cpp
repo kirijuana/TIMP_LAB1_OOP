@@ -1,27 +1,26 @@
 #include "stdafx.h"
 #include "shape_atd.h"
-// Необходима подключить информацию обо всех имеющихся
-// геометрических фигурах
 #include "rectangle_atd.h"
 #include "circle_atd.h"
 #include "triangle_atd.h"
+
 using namespace std;
+
 namespace simple_shapes {
 	// Ввод параметров обобщенной фигуры
-
-	shape* shape::In(ifstream &ifst) {
-		shape *sp;
+	Shape* Shape::In(ifstream &ifst) {
+		Shape *sp;
 		int k;
 		ifst >> k;
 		switch (k) {
 		case 1:
-			sp = new rectangle;
+			sp = new Rectangle;
 			break;
 		case 2:
-			sp = new circle;
+			sp = new Circle;
 			break;
 		case 3:
-			sp = new triangle;
+			sp = new Triangle;
 			break;
 		default:
 			return 0;
@@ -29,6 +28,4 @@ namespace simple_shapes {
 		sp->InData(ifst);
 		return sp;
 	}
-	
-
 } // end simple_shapes namespace

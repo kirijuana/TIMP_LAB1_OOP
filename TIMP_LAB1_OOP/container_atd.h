@@ -3,26 +3,23 @@
 #include "shape_atd.h"
 namespace simple_shapes {
 	// Простейший контейнер на основе одномерного массива
-	class container
+	class Container
 	{
 		enum { max_len = 100 }; // максимальная длина
 		int len; // текущая длина
-		shape *cont[max_len];
+		Shape *cont[max_len];
 	public:
 		void In(ifstream &ifst); // ввод
 		void Out(ofstream &ofst); // вывод
-		// вывод фигур и периметра
-		void Perimeter(ofstream &ofst);
 		void OutRect(ofstream &ofst);
 		void Sort(); // сортировка контейнера
 		void Clear(); // очистка контейнера от фигур
-		container(); // инициализация контейнера
+		Container(); // инициализация контейнера
 
-		~container() 
+		~Container() 
 		{ 
 			Clear(); 
 		}
 	};
-	//--------------
 } // end simple_shapes namespace
 #endif

@@ -1,13 +1,14 @@
 #include "stdafx.h"
 #include "circle_atd.h"
+
 using namespace std;
+
 namespace simple_shapes {
-	// Вывод параметров круга
-	void circle::Out(ofstream &ofst) {
+	void Circle::Out(ofstream &ofst) {
 		ofst << "It is Circle: x = "
-			<< x << ", R = " << R
+			<< x << " , y = " << y << ", R = " << R
 			<< ", Colour = " << colour << ", ";
-		shape::Out(ofst);
+		Shape::Out(ofst);
 		ofst << endl;
-	}
+	}
 } // end simple_shapes namespace
